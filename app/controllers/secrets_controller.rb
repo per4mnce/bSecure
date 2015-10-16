@@ -48,7 +48,17 @@ class SecretsController < ApplicationController
   end
 
   def index
-    @secrets = current_user.secrets.order("catname ASC")
+    #@secrets = current_user.secrets.order("catname ASC")
+    @secrets_grid = initialize_grid(current_user.secrets,
+                    name:                 'g1',
+                    order:                'secrets.catname',
+                    order_direction:      'asc',
+                    per_page:             10,
+                    enable_export_to_csv: true,
+                    csv_file_name:        'bSecure_Export'
+    )
+    export_grid_if_requested('g1' => 'secrets_grid')
+    
   end
 
   def show

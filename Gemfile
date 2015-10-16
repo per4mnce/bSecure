@@ -38,9 +38,12 @@ source 'https://rubygems.org'
  #Add authorization
  gem 'pundit'
  #Add pagination
- gem 'will_paginate-bootstrap'
+ #gem 'will_paginate-bootstrap'
  #Add Stripe for credit card processing
  #gem 'stripe'
+ #Ad wise grid
+ gem "wice_grid", '3.6.0.pre4'
+ gem 'font-awesome-sass',  '~> 4.3'
 
 
 #-------------------------------------------------------------------
