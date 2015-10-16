@@ -10,11 +10,11 @@
 <body class="<%= @body_class %>">
 <div class="container">
    <% if user_signed_in? %>
-     Signed in as: <strong> <%= "#{current_user.name} - #{current_user.email} (#{current_user.role})" %></strong>
+     Signed in as: <strong> <%= "#{current_user.email}" %></strong>
      <ul class="nav nav-pills pull-right">
        <li class="active"><%= link_to 'Edit profile', edit_user_registration_path, :class => '' %> </li>  
        <li class="active"><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => '' %> </li>
-       <li class="active"><%= link_to "Data", wikis_path, class: '' %> </li>
+       <li class="active"><%= link_to "Secrets", secrets_path, class: '' %> </li>
      </ul>
    <% else %>
      <ul class="nav nav-pills pull-right">
