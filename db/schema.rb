@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151016170223) do
+ActiveRecord::Schema.define(version: 20151019175320) do
 
   create_table "secrets", force: :cascade do |t|
     t.string   "catname"
@@ -20,9 +20,13 @@ ActiveRecord::Schema.define(version: 20151016170223) do
     t.string   "pw"
     t.string   "url"
     t.string   "notes"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.integer  "user_id"
+    t.string   "encrypted_username"
+    t.string   "encrypted_pw"
+    t.string   "encrypted_url"
+    t.string   "encrypted_notes"
   end
 
   add_index "secrets", ["user_id"], name: "index_secrets_on_user_id"
