@@ -16,10 +16,6 @@ ActiveRecord::Schema.define(version: 20151019175320) do
   create_table "secrets", force: :cascade do |t|
     t.string   "catname"
     t.string   "description"
-    t.string   "username"
-    t.string   "pw"
-    t.string   "url"
-    t.string   "notes"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.integer  "user_id"
@@ -27,6 +23,10 @@ ActiveRecord::Schema.define(version: 20151019175320) do
     t.string   "encrypted_pw"
     t.string   "encrypted_url"
     t.string   "encrypted_notes"
+    t.string   "notes"
+    t.string   "url"
+    t.string   "pw"
+    t.string   "username"
   end
 
   add_index "secrets", ["user_id"], name: "index_secrets_on_user_id"

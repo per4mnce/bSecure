@@ -10,6 +10,11 @@
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
+  
+   <div class="field">
+     <%= f.label "PIN" %><br />
+     <%= f.text_field :pin, autocomplete: "off" %>
+  </div>
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">

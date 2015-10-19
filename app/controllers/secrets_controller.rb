@@ -48,7 +48,6 @@ class SecretsController < ApplicationController
   end
 
   def index
-    #@secrets = current_user.secrets.order("catname ASC")
     @secrets_grid = initialize_grid(current_user.secrets,
                     name:                 'g1',
                     order:                'secrets.catname',
