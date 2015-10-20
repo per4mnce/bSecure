@@ -48,6 +48,15 @@ class SecretsController < ApplicationController
   end
 
   def index
+   begin
+    #Catch decryption error
+    #Try to decrypt a field to make sure encryption key and pin are correct
+    @secret = Secret.first.pw
+   rescue
+    redirect_to root_path
+    flash[:error] = "Incorrect PIN.  Sign-out and back in again with the correct PIN."
+   end
+   
     @secrets_grid = initialize_grid(current_user.secrets,
                     name:                 'g1',
                     order:                'secrets.catname',
