@@ -1,2 +1,25 @@
-<h1>Welcome#about</h1>
-<p>Find me in app/views/welcome/about.html.erb</p>
+<div class = "col-md-4">
+  <p><%= image_tag("bsecure.jpg", :alt => "Password manager with AES encryption") %></p>
+  <p>bSecure for Web version .1 (rev001)</p>
+  <p>Copyright 2015 <%= link_to "Henry Schaumburger", "http://www.apcp.biz" %>
+</div>
+<div class = "col-md-8">
+<h3><b>Purpose</b></h3>
+Use bSecure to safely store sensitive and important information like web logins, passwords, credit card numbers and 
+any other data you want quick, easy access to. bSecure for Web also exports bSecure data to CSV text file format.<br />
+<p></p>
+<h3><b>Technical Details</b></h3>
+<p>I would like to thank the author's of the following Ruby Gems.
+This Ruby on Rails application would not have been possible without their contributions to the development community.</p>
+<ul>
+  <li><a href="https://rubygems.org/gems/attr_encrypted">256 bit AES Encryption</a></li>
+  <li><a href="https://rubygems.org/gems/wice_grid">Smart Tables</a></li>
+  <li><a href="https://rubygems.org/gems/redcarpet">Markdown parser</a></li>
+</ul>
+<h3><b>Lost your PIN?</b></h3>
+<p><b>It is critical for you to remember your PIN.</b>  Once set, it cannot be changed.  If you loose it, your data will be unrecoverable.
+Please do not ask me for help.  Nothing can be done.</p>
+<h3><b>My Rails Mentor</b></h3>
+<p>I would like to sincerely thank <a href="https://www.bloc.io/mentors/chris-beck">Chris Beck</a> from <a href="https://www.bloc.io">BLOC</a> for all his tireless help and support.</p>
+</div>
+

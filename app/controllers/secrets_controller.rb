@@ -78,11 +78,6 @@ class SecretsController < ApplicationController
   
   def set_record
     @secret = Secret.find(params[:id])
-    # begin
-    #   @wiki = current_user.wikis.find(params[:id]) 
-    # rescue 
-    #   @wiki = nil
-    # end
   end
   
   def secret_params

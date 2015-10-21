@@ -24,7 +24,7 @@
 @import "bootstrap";
 
 // Bootstrap body padding for fixed navbar
-body { padding-top: 60px; }
+body { padding-top: 5px; }
 
 // And finally bootswatch style itself
 @import "bootswatch/cosmo/bootswatch";
@@ -33,14 +33,14 @@ body { padding-top: 60px; }
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-.action {
-  width: 10%;
-}
+// .action {
+//   width: 10%;
+// }
 
-body.thin .content {
-  max-width: 700px;
-  margin: 0 auto;
-}
+// body.thin .content {
+//   max-width: 700px;
+//   margin: 0 auto;
+// }
 
 // body {
 //   \\background-image: image-url('jellyfish.jpg');
