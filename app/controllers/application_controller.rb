@@ -14,5 +14,12 @@ class ApplicationController < ActionController::Base
     # Display user profile after sign-in
 	  secrets_path
   end
+  
+  before_filter :_set_current_session
+
+  protected
+  def _set_current_session
+    Thread.current[:session] = session
+  end
 
 end

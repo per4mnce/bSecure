@@ -48,6 +48,7 @@ class SecretsController < ApplicationController
   end
 
   def index
+    Rails.logger.info ">>>>> pin: #{session[:pin]}"
    begin
     #Catch decryption error
     #Try to decrypt a field to make sure encryption key and pin are correct

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  devise_for :users, controllers: {sessions: "sessions"}
   get 'about' => 'welcome#about'
   get 'welcome' => 'welcome#index'
   resources :secrets
