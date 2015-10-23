@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
          
   has_many :secrets
   
-  #attr_accessor :pin
+  attr_accessor :pin
   
 end

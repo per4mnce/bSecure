@@ -10,13 +10,8 @@ class HelpController < ApplicationController
 
   private
   def valid_page?
+    #Show error if help page can't be found
     File.exist?(Pathname.new(Rails.root + "app/views/help/#{params[:page]}.html.erb"))
   end
- 
- 
- 
-  # def show
-  #   render template: "help/#{params[:page]}"
-  # end
   
 end
