@@ -34,7 +34,8 @@
               <% end %>
               <li><%= link_to "Help", '/help/index' %></li>
               <li><%= link_to "About", about_path %></li>
-              <li><%= link_to "Donate", donate_path, :class => 'nav navbar-nav pull-right' %></li>
+              <li><%= link_to "Donate", donate_path %></li>
+              <li><%= link_to "Contact", contact_path %></li>
             </ul>    
             <ul class="nav navbar-nav navbar-right active">
               <% if user_signed_in? %>

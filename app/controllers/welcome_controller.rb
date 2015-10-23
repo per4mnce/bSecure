@@ -9,4 +9,7 @@ class WelcomeController < ApplicationController
   def donate
   end
   
+  def contact
+  end
+
 end

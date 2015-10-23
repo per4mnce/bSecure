@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {sessions: "sessions"}
   get 'about' => 'welcome#about'
   get 'donate' => 'welcome#donate'
+  get 'contact' => 'welcome#contact'
   get 'welcome' => 'welcome#index'
   resources :secrets
   get "/help/:page" => "help#show"
