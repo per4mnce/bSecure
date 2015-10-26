@@ -21,3 +21,15 @@
 
 en:
   hello: "Hello world"
+  
+en:
+  activerecord:
+    attributes:
+      secret:
+        catname: "Type"
+    errors:
+      models:
+        secret:
+          attributes:
+            catname:
+              blank: "can't be blank"
