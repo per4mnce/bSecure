@@ -3,7 +3,9 @@
  
  # To use this file:
  # rake db:reset
- 
+
+
+#Set Pin
 50.times do
   User.create!(
     #name:     Faker::Name.name,

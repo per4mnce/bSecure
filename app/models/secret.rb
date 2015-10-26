@@ -10,7 +10,9 @@ class Secret < ActiveRecord::Base
                  :pw,
                  :url,
                  :notes,
-                 :key => proc { ENV["encryption_key"] + Thread.current[:session][:pin] }
+                 :key =>  proc { ENV["encryption_key"] + "1234" } 
 
   #proc forces the Thread.current[:session][:pin] to be evaluated each time
+  #For production:  :key => proc { ENV["encryption_key"] + Thread.current[:session][:pin] }
+  #For testing and seeding database:   :key => proc { ENV["encryption_key"] + "1234" }
 end

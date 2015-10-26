@@ -1,3 +1,8 @@
-<br /><br />
-<p><%= link_to 'Back', :back %></p>
-<%#= button_to("Back", help_path, class: "btn btn-primary", method: :get) %>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<br />
+<input type=button value="Back" class="btn btn-primary" onClick="goBack()">
+<!--An alternate way to handle back link <p><%#= link_to 'Back', :back %></p>-->
