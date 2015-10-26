@@ -5,7 +5,6 @@ class Secret < ActiveRecord::Base
   
   #Validation
   validates :catname, presence: true 
-  
   validates :description, presence: true
   
   #Thread.current[:session][:pin] #From login screen.  Must not be saved to DB "1234"

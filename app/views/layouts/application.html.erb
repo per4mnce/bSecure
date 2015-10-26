@@ -9,20 +9,12 @@
     <%= csrf_meta_tags %>
     <title>bSecure</title>
   </head>
-  <body>
     <div class = "container">
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
             <%= link_to "bSecure", root_path, class: 'navbar-brand' %>
           </div> <!--/navbar-header -->
-          <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <% if user_signed_in? %>
                 <li><%= link_to 'Edit profile', edit_user_registration_path  %></li>
@@ -30,7 +22,7 @@
                 <li><%= link_to "My Data", secrets_path %></li>
               <% else %>
                 <li><%= link_to "Sign Up", new_user_registration_path %></li>
-                <li><%= link_to "Sign In", new_user_session_path %></li>
+                <li><%= link_to "Log In", new_user_session_path %></li>
               <% end %>
               <li><%= link_to "Help", '/help/index' %></li>
               <li><%= link_to "About", about_path %></li>
@@ -42,7 +34,6 @@
                 <li><%= link_to "#{current_user.email}", edit_user_registration_path %></li>
               <% end %>  
             </ul>
-          </div> <!--/.nav-collapse -->
         </div> <!--/.container-fluid -->
       </nav>
       
