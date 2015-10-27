@@ -4,7 +4,14 @@ class SecretsController < ApplicationController
   before_action :authenticate_user!
   
   def new
-    @secret = Secret.new
+    #Allow maximum of 500 records to prevent abuse and overuse
+    if current_user.secrets.count >= 500
+      flash[:notice] = "Maximum number of records exceeded."
+      redirect_to secrets_path
+    else
+      @secret = Secret.new
+    end
+    
   end
 
   def create
