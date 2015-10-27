@@ -8,10 +8,11 @@ class ApplicationController < ActionController::Base
   
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_in) << [:pin]
+    devise_parameter_sanitizer.for(:sign_up) << [:pin, :pin_confirmation]
   end
   
   def after_sign_in_path_for(resource)
-    # Display user profile after sign-in
+    # Display data
 	  secrets_path
   end
   

@@ -8,4 +8,6 @@ class User < ActiveRecord::Base
   
   attr_accessor :pin, :pin_confirmation
   
+  validates :pin, length: { minimum: 4 }
+  
 end

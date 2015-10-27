@@ -57,9 +57,9 @@ class SecretsController < ApplicationController
   def index
     #Rails.logger.info ">>>>> pin: #{session[:pin]}"
    begin
-    #Catch decryption error
-    #Try to decrypt a field to make sure encryption key and pin are correct
-    @secret = Secret.first.pw
+   #Catch decryption error
+   #Try to decrypt a field to make sure encryption key and pin are correct
+   current_user.secrets.first.pw if current_user.secrets.any?
    rescue Exception => e
     if e.message == "bad decrypt"
       redirect_to root_path
