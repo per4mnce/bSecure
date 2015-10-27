@@ -63,7 +63,7 @@ class SecretsController < ApplicationController
    rescue Exception => e
     if e.message == "bad decrypt"
       redirect_to root_path
-      flash[:error] = "Incorrect PIN.  Sign-out and back in again with the correct PIN."
+      flash[:error] = "Unable to decrypt.  Sign-out and back in again with the correct PIN."
     end
    end
    @secrets_grid = initialize_grid(current_user.secrets,
