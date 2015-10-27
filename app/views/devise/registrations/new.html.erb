@@ -21,6 +21,17 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
+  
+  <div class="field">
+     <%= f.label "PIN" %><br />
+     <%= f.password_field :pin, autocomplete: "off", class: 'form-control' %>
+  </div>
+  
+  <div class="field">
+     <%= f.label "PIN confirmation" %><br />
+     <%= f.password_field :pin_confirmation, autocomplete: "off", class: 'form-control', type: 'password' %>
+  </div>
+  
 
   <div class="actions">
     <%= f.submit "Sign up", class: 'btn btn-success' %>

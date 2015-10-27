@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'donate' => 'welcome#donate'
   get 'contact' => 'welcome#contact'
   get 'welcome' => 'welcome#index'
+  resources :passwords
   resources :secrets
   get "/help/:page" => "help#show"
   root to: 'welcome#index'
