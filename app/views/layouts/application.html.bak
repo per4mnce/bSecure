@@ -17,22 +17,21 @@
           </div> <!--/navbar-header -->
             <ul class="nav navbar-nav">
               <% if user_signed_in? %>
+                <li><%= link_to 'Edit profile', edit_user_registration_path  %></li>
+                <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
                 <li><%= link_to "My Data", secrets_path %></li>
-                
-                
+              <% else %>
+                <li><%= link_to "Sign Up", new_user_registration_path %></li>
+                <li><%= link_to "Log In", new_user_session_path %></li>
               <% end %>
               <li><%= link_to "Help", '/help/index' %></li>
               <li><%= link_to "About", about_path %></li>
               <li><%= link_to "Donate", donate_path %></li>
               <li><%= link_to "Contact", contact_path %></li>
             </ul>    
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right active">
               <% if user_signed_in? %>
-                <li><%= link_to ' Edit-Profile', edit_user_registration_path, class: 'glyphicon glyphicon-cog'  %></li>
-                <li><%= link_to " Log-Out", destroy_user_session_path, method: :delete, class: 'glyphicon glyphicon-log-in' %></li>
-              <% else %>
-                <li><%= link_to " Sign-Up", new_user_registration_path, class: 'glyphicon glyphicon-user' %></li>
-                <li><%= link_to " Log-In", new_user_session_path, class: 'glyphicon glyphicon-log-in' %></li>
+                <li><%= link_to "#{current_user.email}", edit_user_registration_path %></li>
               <% end %>  
             </ul>
         </div> <!--/.container-fluid -->
