@@ -1,8 +1,11 @@
-<h2>Deleting Records</h2>
+<% body = 
+"## Deleting Records
+
+Press the 'X'(Delete) icon located at the right of the 'My Data' view.
+You will be asked to confirm your deletion.
+Please be careful when deleting.  Once deleted, it is gone forever.
+" %>
+<%= markdown(body) %><br />
+
 <p><%= image_tag("deleting_record1.png", alt: "Deleting Screen", style: "border: 1px solid black") %></p>
-
-<h3>Sub-Topic</h3>
-Text
-
-<br />
 <%= render "help/footer" %>

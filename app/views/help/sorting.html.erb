@@ -1,8 +1,13 @@
-<h2>Sorting</h2>
+<% body = 
+"## Sorting
+
+You can sort your information by 'Category' or 'Description' by clinking on the column header name.
+You can sort ascending (a to z) or descending (z to a) by clicking on the column header name.
+The sorted column will contain an arrow to the right of the column name.
+Your data is initially sorted by 'Category'
+" %>
+<%= markdown(body) %><br />
+
 <p><%= image_tag("sorting1.png", alt: "Sorting Screen", style: "border: 1px solid black") %></p>
 
-<h3>Sub-Topic</h3>
-Text
-
-<br />
 <%= render "help/footer" %>

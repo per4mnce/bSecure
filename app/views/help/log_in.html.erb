@@ -1,8 +1,11 @@
-<h2>Log In</h2>
+<% body = 
+"## Log In
+
+You must log in before you can use bSecure to sceurely store your information. 
+Your email, password, and pin are required by bSecure each time you log in.
+You will automatically be logged out after five minutes of inactvity" %>
+<%= markdown(body) %><br />
+
 <p><%= image_tag("login1.png", alt: "Log In Screen", style: "border: 1px solid black") %></p>
 
-<h3>Sub-Topic</h3>
-Text
-
-<br />
 <%= render "help/footer" %>

@@ -1,9 +1,14 @@
-<h2>Editing Records</h2>
+<% body = 
+"## Editing Records
+
+Press the 'Pencil'(Edit) icon located at the left of the 'My Data' view.
+The 'Type' and 'Description' are required fields.
+The 'Notes' field can be formatted using [Markdown](https://en.wikipedia.org/wiki/Markdown).
+Press the 'Save' button to save your data.
+Press the 'Cancel' button to discard your data.
+" %>
+<%= markdown(body) %><br />
+
 <p><%= image_tag("editing_record1.png", alt: "Editing Screen", style: "border: 1px solid black") %></p>
 <p><%= image_tag("editing_record2.png", alt: "Editing Screen", style: "border: 1px solid black") %></p>
-
-<h3>Sub-Topic</h3>
-Text
-
-<br />
 <%= render "help/footer" %>

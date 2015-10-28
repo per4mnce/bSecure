@@ -1,8 +1,11 @@
-<h2>Sign Up</h2>
+<% body = 
+"## Sign Up
+
+You must sign up before you can use bSecure to sceurely store your information. The sign up process is quick and easy.
+Please remember to retain your email, password and pin.  These are required by bSecure each time you log in.
+The Password & Pin generator can help you select a secure password or Pin if you need help." %>
+<%= markdown(body) %><br />
+
 <p><%= image_tag("signup1.png", alt: "Sign Up Screen", style: "border: 1px solid black") %></p>
 
-<h3>Sub-Topic</h3>
-Text
-
-<br />
 <%= render "help/footer" %>

@@ -1,9 +1,18 @@
-<h2>Filtering and Searching</h2>
+<% body = 
+"## Filtering & Searching
+
+You can filter and search for information.
+The controls are displayed by clicking the 'show' filter icon at the right of the screen.
+A new row will be displayed that allows you to select or enter your search criteria.
+Press the 'Filter' button after your critera is entered.
+Press the 'Reset' button to remove your filtering and searching.
+" %>
+<%= markdown(body) %><br />
 <p><%= image_tag("filter_and_searching1.png", alt: "Filtering and Searching Screen", style: "border: 1px solid black") %></p>
+
+<% body = 
+"### Controls" %>
+<%= markdown(body) %><br />
 <p><%= image_tag("filter_and_searching2.png", alt: "Filtering and Searching Screen", style: "border: 1px solid black") %></p>
 
-<h3>Sub-Topic</h3>
-Text
-
-<br />
 <%= render "help/footer" %>

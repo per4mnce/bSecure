@@ -1,0 +1,15 @@
+<% body = 
+"## What is the signifigance of you PIN?
+
+bSecure uses your pin to create a key used to encrypt and decrypt your information.
+You must enter your PIN each time you access bSecure because your PIN is **never** stored by our application.
+This means there is no way for us or anyone else to recover your information if you loose your key.
+
+### PIN Guidelines:
+* Treat it like a password
+* Make it complex and difficult to guess
+* Use a combination of numbers and uppercase/lowercase letters" %>
+
+<%= markdown(body) %>
+
+<%= render "help/footer" %>
