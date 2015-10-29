@@ -29,7 +29,6 @@ class SecretsController < ApplicationController
 
   def update
     @secret.assign_attributes(secret_params)
-     #authorize @wiki
      if @secret.save
        flash[:notice] = "Record was updated."
       redirect_to secrets_path 
