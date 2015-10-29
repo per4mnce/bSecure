@@ -10,10 +10,10 @@ class User < ActiveRecord::Base
   
   attr_accessor :pin, :pin_confirmation
   
-  validates :pin, length: { minimum: 8 }
+  validates :pin, length: { minimum: 8 }, on: :create
   validates :pin, confirmation: true #Make sure pin and pin_confirmation match
-  validates :pin_confirmation, presence: true
-  validate :pin_cannot_equal_password
+  validates :pin_confirmation, presence: true, on: :create
+  validate :pin_cannot_equal_password, on: :create
   
   def pin_cannot_equal_password
     #Make sure pin is not the same as the password
