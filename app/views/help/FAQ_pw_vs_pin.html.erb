@@ -1,0 +1,22 @@
+<% body = 
+"## What is the difference between a password and a PIN?
+
+### Password
+Your password is used to authenticate you to the bSecure application. It is encrypted and stored in the 
+bSecure database.  Your password can be reset if it is lost.
+
+### PIN
+Your PIN is required by bSecure to create a key used to encrypt and decrypt your information
+Your PIN is never stored by our application. This means there is no way for us or anyone else
+to recover your information if you loose your key.
+
+### Both
+Both your PIN and password are important in keeping your informatrion secure.
+See the following articles for password and PIN best practices:" %>
+<%= markdown(body) %>
+
+<ul>
+  <li><a href="http://lifehacker.com/5876541/use-this-infographic-to-pick-a-good-strong-password" target="_blank">Pick a Good, Strong Password</a></li>
+  <li><a href="https://www.microsoft.com/security/pc-security/password-checker.aspx" target="_blank">Create Strong Passwords</a></li>
+</ul>
+<%= render "help/footer" %>

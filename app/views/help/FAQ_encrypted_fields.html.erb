@@ -1,0 +1,19 @@
+<% body = 
+"## What information is encrypted?
+
+### Encrypted
+* Username
+* Password
+* Url
+* Notes 
+
+### NOT Encrypted
+* Type
+* Description
+
+Type and Description are **NOT** encrypted so that sorting and filtering are possible." %>
+<%= markdown(body) %>
+
+<p><%= image_tag("new_record1.png", alt: "New Record Screen", style: "border: 1px solid black") %></p>
+
+<%= render "help/footer" %>
