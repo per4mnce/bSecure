@@ -17,7 +17,7 @@ class SessionsController < Devise::SessionsController
   
   def create
     self.resource = warden.authenticate!(auth_options)
-      Rails.logger.info ">>>>>>  auth_options: #{auth_options.inspect}"
+      #Rails.logger.info ">>>>>>  auth_options: #{auth_options.inspect}"
       set_flash_message(:notice, :signed_in) if is_navigational_format?
       sign_in(resource_name, resource)
       if !session[:return_to].blank?
@@ -25,7 +25,7 @@ class SessionsController < Devise::SessionsController
         session[:return_to] = nil
       else
         session[:pin] = params[:user][:pin]
-        Rails.logger.info ">>>> pin: #{session[:pin]}"
+        #Rails.logger.info ">>>> pin: #{session[:pin]}"
         respond_with resource, :location => after_sign_in_path_for(resource)
       end
   end

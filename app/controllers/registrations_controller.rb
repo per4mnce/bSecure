@@ -7,15 +7,16 @@ class RegistrationsController < Devise::RegistrationsController
     #Rails.logger.info ">>>>>>>>>>>>> params: #{sign_up_params.inspect}"
     session[:pin] = params[:user][:pin]
     #Rails.logger.info ">>>>>> Pin set to #{session[:pin]}"
+    super
     
-    unless params[:user][:pin] == params[:user][:pin_confirmation]
-      #Rails.logger.info ">>>>> pin == pin_confirmation? Nope!"
-      flash[:error] = "Pins do not match.  Please try again."
-      redirect_to new_user_registration_path
-    else 
-      Rails.logger.info ">>> pins matched"
-      super
-    end
+    # unless params[:user][:pin] == params[:user][:pin_confirmation]
+    #   #Rails.logger.info ">>>>> pin == pin_confirmation? Nope!"
+    #   flash[:error] = "Pins do not match.  Please try again."
+    #   redirect_to new_user_registration_path
+    # else 
+    #   #Rails.logger.info ">>> pins matched"
+    #   super
+    # end
     
     
     # build_resource(sign_up_params)
