@@ -46,6 +46,8 @@ source 'https://rubygems.org'
  gem 'capybara'
  #Add Rspec
  gem 'rspec-rails'
+ #Add TablePrint. See http://tableprintgem.com/ for details
+ gem 'table_print'
 
 
 #-------------------------------------------------------------------
