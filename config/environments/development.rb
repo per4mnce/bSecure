@@ -41,7 +41,8 @@ Rails.application.configure do
   
    config.action_mailer.default_url_options = { host: 'bloccit-henryschaumburger.c9.io', port: 8080 }
    config.action_mailer.raise_delivery_errors = true
-
+  
+   #config.allow_concurrency = false
    
    
 end

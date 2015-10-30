@@ -42,6 +42,10 @@ source 'https://rubygems.org'
  gem 'font-awesome-sass',  '~> 4.3'
  #Add encryption
  gem 'attr_encrypted'
+ #Add Capybara for testing
+ gem 'capybara'
+ #Add Rspec
+ gem 'rspec-rails'
 
 
 #-------------------------------------------------------------------

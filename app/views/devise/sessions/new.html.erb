@@ -3,17 +3,17 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+    <%= f.email_field :email, autofocus: true, class: 'form-control', id:"Email" %>
   </div>
 
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control', id:"Password" %>
   </div>
   
    <div class="field">
      <%= f.label "PIN" %><br />
-     <%= f.password_field :pin, autocomplete: "off", class: 'form-control' %>
+     <%= f.password_field :pin, autocomplete: "off", class: 'form-control', id:"Pin" %>
   </div>
 
   <!--<%# if devise_mapping.rememberable? -%>-->
