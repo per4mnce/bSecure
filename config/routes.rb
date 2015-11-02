@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   #resources :passwords
   resources :secrets
   get "/help/:page" => "help#show"
+  
+  devise_scope :user do
+    get '/signout', to: 'devise/sessions#destroy', as: :signout
+  end
+  
   root to: 'welcome#index'
   
   

@@ -61,8 +61,10 @@ class SecretsController < ApplicationController
    current_user.secrets.first.pw if current_user.secrets.any?
    rescue Exception => e
     if e.message == "bad decrypt"
-      redirect_to root_path
       flash[:error] = "Unable to decrypt.  Sign-out and back in again with the correct PIN."
+      redirect_to signout_path
+      #redirect_to root_path
+      
     end
    end
    @secrets_grid = initialize_grid(current_user.secrets,
