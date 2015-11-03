@@ -61,7 +61,7 @@ class SecretsController < ApplicationController
    current_user.secrets.first.pw if current_user.secrets.any?
    rescue Exception => e
     if e.message == "bad decrypt"
-      flash[:error] = "Unable to decrypt.  Sign-out and back in again with the correct PIN."
+      flash[:error] = "Unable to decrypt.  Log in again with the correct PIN."
       Rails.logger.info ">>>> flash: #{flash.inspect}"
       redirect_to signout_path
       #redirect_to root_path
