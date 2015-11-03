@@ -6,7 +6,17 @@ class SessionsController < Devise::SessionsController
   end
   
   def destroy
-    super
+    error = flash[:error]
+    signed_out = (Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name))
+    
+    if error.blank?
+      set_flash_message :notice, :signed_out if signed_out && is_flashing_format?
+    else
+      flash[:notice] = nil
+      flash[:error] = error
+    end
+    yield if block_given?
+    respond_to_on_destroy
     puts ">>>>>>>>>>>>>>>>>>>>>>>>>Session Controller DESTROY"
   end
   

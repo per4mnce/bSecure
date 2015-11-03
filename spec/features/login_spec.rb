@@ -2,8 +2,11 @@ require 'rails_helper'
 require 'spec_helper'
 
 feature 'Visitor signs up' do
+  before do 
+    User.create!(email:'per4mnce@gmail.com', password: 'password', pin: '12345678', pin_confirmation: '12345678' )
+  end
   scenario 'with valid email and password' do
-    sign_up_with('per4mnce@gmail.com', 'password', '1234')
+    sign_up_with('per4mnce@gmail.com', 'password', '12345678')
 
     expect(page.find('.alert')).to have_content 'Signed in successfully'   
   end
