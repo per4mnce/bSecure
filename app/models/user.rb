@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          
          #Removed :rememberable
          
-  has_many :secrets
+  has_many :secrets, dependent: :destroy
   
   attr_accessor :pin, :pin_confirmation
   

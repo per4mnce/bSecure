@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_in) << [:pin]
     devise_parameter_sanitizer.for(:sign_up) << [:pin, :pin_confirmation]
+    devise_parameter_sanitizer.for(:account_update) << [:pin]
   end
   
   def after_sign_in_path_for(resource)
