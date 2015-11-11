@@ -48,6 +48,8 @@ source 'https://rubygems.org'
  gem 'rspec-rails'
  #Add TablePrint. See http://tableprintgem.com/ for details
  gem 'table_print'
+ #Add SSL Enforcer See https://github.com/tobmatth/rack-ssl-enforcer
+ gem 'rack-ssl-enforcer'
 
 
 #-------------------------------------------------------------------

@@ -102,6 +102,7 @@ GEM
     orm_adapter (0.5.0)
     pg (0.18.3)
     rack (1.6.4)
+    rack-ssl-enforcer (0.2.9)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -203,6 +204,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.3)
   jquery-rails
   pg
+  rack-ssl-enforcer
   rails (= 4.2.1)
   rails_12factor
   redcarpet
