@@ -1,3 +1,42 @@
 # bSecure
+![Logo](https://bsecure1.herokuapp.com/assets/bsecure-39780077c89116f4f2e947657dc59fbfbb5289bc6b307e99533062ae05cf6e27.jpg)
+
 Password manager with 256 bit AES encryption<br>
 Heroku link https://bsecure1.herokuapp.com/
+
+## Description
+Use bSecure to safely store sensitive and important information like web logins, passwords, credit card numbers and any other data you want quick, easy access to. Features include:
+
+* AES-256 encryption
+* PIN required to decrypt
+* PIN is not stored by us
+* Smart Tables
+* Searching and Sorting
+* Filtering
+* Password Genertor
+* Export to CSV
+* Markdown text formatting
+
+## Credits
+The following Ruby Gems are used in this application. bSecure would not have been possible without the significant contributions of the following authors.
+
+* attr_encrypted (Encryption) - Copyright (c) 2008 Sean Huber - shuber@huberry.com
+* bootstrap-saas (UI formatting) - Copyright (c) 2013-2015 Twitter, Inc
+* bootswatch-rails (UI themes) - Copyright (c) 2012 Maxim Chernyak
+* capybara (Testing) - Copyright (c) 2009-2012 Jonas Nicklas
+* devise (Authentication) - Copyright (c) 2009-2015 Plataformatec. http://plataformatec.com.br
+* faker (Test data generation) - Copyright (c) 2007-2010 Benjamin Curtis
+* figaro (Configuration) - Copyright (c) 2012 Steve Richert
+* font-awesome-sass (Font & CSS toolkit) - Copyright (c) 2013 Travis Chase
+* rack-ssl-enforcer (Force HTTPS) -Copyright (c) 2009-2012 Tobias Matthies
+* redcarpet (Markdown parser) - Copyright (c) 2009, Natacha Porté, Copyright (c) 2015, Vicent Marti
+* rspec-rails (Testing framework) - Copyright © 2015 David Chelimsky, Aaron Kromer
+* table_print (Data reporting and formatting) - Copyright (c) 2013 Chris Doyle
+* wice_grid (Smart Tables) - Copyright (c) 2008-2014 Yuri Leikind
+
+This application was developed using the Ruby on Rails framework. I would like to thank David Heinemeier Hansson and the countless contributors that make Rails a fantastic framework.
+
+I would like to thank Cloud9 for providing an amazing virtual development environment.
+
+My Rails Mentor
+I would like to sincerely thank Chris Beck from BLOC for all his tireless help and support.
