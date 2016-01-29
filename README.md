@@ -10,10 +10,7 @@ Data Encryption, Password generator, Search, Filter, Export to CSV, Help, FAQ, M
 Ruby on Rails, Bootstrap, AES Encryption, Devise authentication, Heroku deployment
 
 ## User Interface:
-![Screen View]()
-![Screen View]()
-![Screen View]()
-![Screen View]()
+![Screen View](https://static.wixstatic.com/media/045a70_e043969003144afab2a4a4c5c78446c4.png/v1/fill/w_939,h_515,al_c/045a70_e043969003144afab2a4a4c5c78446c4.png)
 
 ## Credits
 The following Ruby Gems are used in this application. bSecure would not have been possible without the significant contributions of the following authors.
