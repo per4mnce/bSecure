@@ -32,5 +32,5 @@ This application was developed using the Ruby on Rails framework. I would like t
 
 I would like to thank Cloud9 for providing an amazing virtual development environment.
 
-My Rails Mentor
+### My Rails Mentor
 I would like to sincerely thank Chris Beck from BLOC for all his tireless help and support.
