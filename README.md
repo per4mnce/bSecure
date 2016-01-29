@@ -1,4 +1,3 @@
-![Logo](https://bsecure1.herokuapp.com/assets/bsecure-39780077c89116f4f2e947657dc59fbfbb5289bc6b307e99533062ae05cf6e27.jpg)
 # bSecure
 Free password manager with 256 bit AES encryption<br>
 Heroku link https://bsecure1.herokuapp.com/
