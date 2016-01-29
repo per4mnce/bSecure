@@ -1,21 +1,19 @@
-# bSecure
 ![Logo](https://bsecure1.herokuapp.com/assets/bsecure-39780077c89116f4f2e947657dc59fbfbb5289bc6b307e99533062ae05cf6e27.jpg)
-
-Password manager with 256 bit AES encryption<br>
+# bSecure
+Free password manager with 256 bit AES encryption<br>
 Heroku link https://bsecure1.herokuapp.com/
 
-## Description
-Use bSecure to safely store sensitive and important information like web logins, passwords, credit card numbers and any other data you want quick, easy access to. Features include:
+## Features:
+Data Encryption, Password generator, Search, Filter, Export to CSV, Help, FAQ, Markdown text formatting, Donate (Using PayPal), User sign-up, User sign-in and out, CRUD, Seeding data.
+ 
+## Technology Focus:
+Ruby on Rails, Bootstrap, AES Encryption, Devise authentication, Heroku deployment
 
-* AES-256 encryption
-* PIN required to decrypt
-* PIN is not stored by us
-* Smart Tables
-* Searching and Sorting
-* Filtering
-* Password Genertor
-* Export to CSV
-* Markdown text formatting
+## User Interface:
+![Screen View]()
+![Screen View]()
+![Screen View]()
+![Screen View]()
 
 ## Credits
 The following Ruby Gems are used in this application. bSecure would not have been possible without the significant contributions of the following authors.
